@@ -173,13 +173,8 @@ O andamento do projeto foi realizado por meio das ferramentas internas do GitHub
 Para controle de requisitos, foi utilizado o quadro Kanbam: A fazer, Em progresso, Code Review e Feito.
 ## Divisão de Papéis
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Apresente a divisão de papéis e tarefas entre os membros do grupo.
->
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+Durante a fase de concepção, a equipe trabalhou de forma conjunta nos processos de Brainstorming e Brainwriting. Durante a fase de incrementação,
+os papéis serão divididos a partir da distribuição de requisitos, de forma que cada funcionalidade possa ser desenvolvida de forma individual e igualmente distribuida entre os membros.
 
 
 ## Ferramentas
