@@ -78,6 +78,8 @@ Enquanto universitários e moradores de Belo Horizonte, não apenas sofremos com
 - Git & GitHub
 - Discord
 - Figma
+- Forms
+- R
 - VSCode
 - HTML, CSS e JavaScript
 - Jest
@@ -148,6 +150,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ## User Flow
 
+Link do Figma: https://www.figma.com/file/73GbzDbEFXqVZZmH5QrSfh/Beag%C3%A1pp---User-Flow
+
 > ![User Flow](./images/userflow.png)
 
 
@@ -165,22 +169,13 @@ Wireframe: https://www.figma.com/file/7XzqFNmqod0aYhUHMxIWcG/Beag%C3%A1pp---Wire
 
 # Metodologia
 
-> Nesta parte do documento, você deve apresentar a metodologia 
-> adotada pelo grupo, descrevendo o processo de trabalho baseado nas metodologias ágeis, 
-> a divisão de papéis e tarefas, as ferramentas empregadas e como foi realizada a
-> gestão de configuração do projeto via GitHub.
->
-> Coloque detalhes sobre o processo de Design Thinking e a implementação do Framework Scrum seguido
-> pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar
-> o andamento do projeto, a execução das tarefas e o status de desenvolvimento
-> da solução.
-> 
-> **Links Úteis**:
-> - [Tutorial Trello](https://trello.com/b/8AygzjUA/tutorial-trello)
-> - [Gestão ágil de projetos com o Trello](https://www.youtube.com/watch?v=1o9BOMAKBRE)
-> - [Gerência de projetos - Trello com Scrum](https://www.youtube.com/watch?v=DHLA8X_ujwo)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+Durante a fase de concepção, foi utilizado o método de Design Thinking para definição de ideias iniciais, delimitação do escopo e levantamento de requisitos.
 
+Ao longo do projeto, foi utilizado o método ágil SCRUM para todas as fases de desenvolvimento.
+
+O andamento do projeto foi realizado por meio das ferramentas internas do GitHub.
+
+Para controle de requisitos, foi utilizado o quadro Kanbam: A fazer, Em progresso, Code Review e Feito.
 ## Divisão de Papéis
 
 ......  COLOQUE AQUI O SEU TEXTO ......
@@ -194,37 +189,26 @@ Wireframe: https://www.figma.com/file/7XzqFNmqod0aYhUHMxIWcG/Beag%C3%A1pp---Wire
 
 ## Ferramentas
 
-......  COLOQUE AQUI O SEU TEXTO - SIGA O EXEMPLO DA TABELA ABAIXO  ......
-
 | Ambiente  | Plataforma              |Link de Acesso |
 |-----------|-------------------------|---------------|
-|Processo de Design Thinkgin  | Miro |  https://miro.com/XXXXXXX | 
-|Repositório de código | GitHub | https://github.com/XXXXXXX | 
-|Hospedagem do site | Heroku |  https://XXXXXXX.herokuapp.com | 
-|Protótipo Interativo | MavelApp ou Figma | https://figma.com/XXXXXXX | 
+|Processo de Design Thinkgin  | Miro |  https://miro.com/app/board/uXjVOBTVCpw=/ | 
+|Repositório de código | GitHub | https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2022-1-ti1-7924100-t2-g5-curadoria-bh | 
+| Pesquisa | Google Forms | https://forms.gle/9zUHRUArSAyJrc4V9 |
+|Protótipo Interativo | Figma | https://www.figma.com/file/7XzqFNmqod0aYhUHMxIWcG/Beag%C3%A1pp---Wireframes?node-id=0%3A1 | 
 
->
-> Liste as ferramentas empregadas no desenvolvimento do
-> projeto, justificando a escolha delas, sempre que possível.
-> 
 > As ferramentas empregadas no projeto são:
-> 
-> - Editor de código.
-> - Ferramentas de comunicação
-> - Ferramentas de diagramação
-> - Plataforma de hospedagem
-> 
-> O editor de código foi escolhido porque ele possui uma integração com o
-> sistema de versão. As ferramentas de comunicação utilizadas possuem
-> integração semelhante e por isso foram selecionadas. Por fim, para criar
-> diagramas utilizamos essa ferramenta por melhor captar as
-> necessidades da nossa solução.
-> 
-> **Links Úteis - Hospedagem**:
-> - [Getting Started with Heroku](https://devcenter.heroku.com/start)
-> - [Crie seu Site com o HostGator](https://www.hostgator.com.br/como-publicar-seu-site)
-> - [GoDady](https://br.godaddy.com/how-to)
-> - [GitHub Pages](https://pages.github.com/)
+>
+> - Miro
+> - Git & GitHub
+> - Discord
+> - Figma
+> - Forms
+> - R
+> - VSCode
+> - HTML, CSS e JavaScript
+> - Jest
+> - Lighthouse
+>
 
 ## Controle de Versão
 
@@ -337,11 +321,10 @@ Wireframe: https://www.figma.com/file/7XzqFNmqod0aYhUHMxIWcG/Beag%C3%A1pp---Wire
 
 # Referências
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Inclua todas as referências (livros, artigos, sites, etc) utilizados
-> no desenvolvimento do trabalho.
-> 
-> **Links Úteis**:
-> - [Formato ABNT](https://www.normastecnicas.com/abnt/trabalhos-academicos/referencias/)
-> - [Referências Bibliográficas da ABNT](https://comunidade.rockcontent.com/referencia-bibliografica-abnt/)
+- MAGALHÃES, M. N, LIMA, LIMA, A. C. P.,  2004, Noções de Probabilidade e Estatística, 6ed. Editora da Universidade de São Paulo, São Paulo.
+- TRIOLA, M.G., 1999. Introdução à Esatística, 7ed . LTC, Rio de Janeiro.
+- KOHONEN, T., 2001. Self-Organinzing Maps, Number 30 in Springer Series in Information Sciences, 3ed. Springer-Verlag, Berlin.
+- WHRENS, R, BUYDENS, L. M. C., 2007 Self and Super-organizing Maps in R. Journal of Statistical Software, Volume 21.
+- SOMMERVILLE, Ian. Engenharia de software. 10. ed. São Paulo: Pearson Education do Brasil, c2019. xii, 756 p. ISBN 9788543024974.
+- BROWNE, Carmen. User Flows vs. Wireframes: What’s the Difference? 2021. Disponível em: https://careerfoundry.com/en/blog/ux-design/user-flows-vs-wireframes/. Acesso em 22 de abril de 2022.
+- ALBELOP. Conventional Commits Cheat Sheet. 2018. Disponível em: https://cheatography.com/albelop/cheat-sheets/conventional-commits/. Acesso em 22 de abril de 2022.
