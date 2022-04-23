@@ -157,14 +157,9 @@ Link do Figma: https://www.figma.com/file/73GbzDbEFXqVZZmH5QrSfh/Beag%C3%A1pp---
 
 ## Wireframes
 
-......  INCLUA AQUI OS WIREFRAMES DAS TELAS DA APLICAÇÃO COM UM BREVE DESCRITIVO ......
-
 Wireframe: https://www.figma.com/file/7XzqFNmqod0aYhUHMxIWcG/Beag%C3%A1pp---Wireframes?node-id=0%3A1
 
-> Wireframes são protótipos das telas da aplicação usados em design de interface para sugerir a
-> estrutura de um site web e seu relacionamentos entre suas
-> páginas. Um wireframe web é uma ilustração semelhante ao
-> layout de elementos fundamentais na interface.
+Os Wireframes foram elaborados tendo em vista a necessidade de se desenvolver uma interface simples e intuitiva a fim de atender às necessidades de nossas personas. Para tanto, utilizamos padrões e símbolos já conhecidos popularmente na Web como forma de facilitar o entendimento do usuário. Buscamos também elaborá-los de tal forma que a interface pudesse ser construída de forma simples a partir de HTML, CSS e JavaScript.
 
 
 # Metodologia
