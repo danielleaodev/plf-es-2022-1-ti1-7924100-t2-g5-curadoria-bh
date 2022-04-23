@@ -1,11 +1,11 @@
 # Informações do Projeto
 `TÍTULO DO PROJETO`  
 
-BEAGÁPP
+## BEAGÁPP
 
 `CURSO` 
 
-Engenharia de Software
+### Engenharia de Software
 
 ## Participantes
 
@@ -228,12 +228,6 @@ Wireframe: https://www.figma.com/file/7XzqFNmqod0aYhUHMxIWcG/Beag%C3%A1pp---Wire
 
 ## Controle de Versão
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Discuta como a configuração do projeto foi feita na ferramenta de
-> versionamento escolhida. Exponha como a gerência de tags, merges,
-> commits e branchs é realizada. Discuta como a gerência de issues foi
-> realizada.
 > A ferramenta de controle de versão adotada no projeto foi o
 > [Git](https://git-scm.com/), sendo que o [Github](https://github.com)
 > foi utilizado para hospedagem do repositório `upstream`.
@@ -252,14 +246,16 @@ Wireframe: https://www.figma.com/file/7XzqFNmqod0aYhUHMxIWcG/Beag%C3%A1pp---Wire
 > - `enhancement`: uma funcionalidade precisa ser melhorada
 > - `feature`: uma nova funcionalidade precisa ser introduzida
 >
-> **Links Úteis**:
-> - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
-> - [Git e Github](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
-> - [5 Git Workflows & Branching Strategy to deliver better code](https://zepel.io/blog/5-git-workflows-to-improve-development/)
+> Em relação aos commits, o projeto adota a seguinte convenção para etiquetas:
+> - `feat`: introdução de uma nova funcionalidade
+> - `fix`: correção de bug
+> - `docs`: atualização de documentação
+> - `style`: atualizações que não afetam a funcionalidade da aplicação
+> - `refactor`: refatoração de alguma funcionalidade do código
+> - `perf`: melhoria de performance
+> - `test`: criação de testes
+> - `reverts`: reverção de um commit anterior
 >
-> **Exemplo - GitHub Feature Branch Workflow**:
->
-> ![Exemplo de Wireframe](images/Github-Workflow.png)
 
 # **############## SPRINT 1 ACABA AQUI #############**
 
