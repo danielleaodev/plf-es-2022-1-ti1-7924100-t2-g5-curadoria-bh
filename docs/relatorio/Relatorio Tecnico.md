@@ -171,10 +171,21 @@ Ao longo do projeto, foi utilizado o método ágil SCRUM para todas as fases de 
 O andamento do projeto foi realizado por meio das ferramentas internas do GitHub.
 
 Para controle de requisitos, foi utilizado o quadro Kanbam: A fazer, Em progresso, Code Review e Feito.
+
 ## Divisão de Papéis
 
 Durante a fase de concepção, a equipe trabalhou de forma conjunta nos processos de Brainstorming e Brainwriting. Durante a fase de incrementação,
 os papéis serão divididos a partir da distribuição de requisitos, de forma que cada funcionalidade possa ser desenvolvida de forma individual e igualmente distribuida entre os membros.
+
+Sprint 2:
+| Membro | Descrição do artefato |
+|--------|-----------------------|
+| Daniel Leão | Templates: Home (landing page), Feed, Painel Geral |
+| Letícia Lott| Cadastro de serviços / Apresentação Novidades |
+| Gabrielle | Login de usuários |
+| Philippe | Apresentação do Feed |
+| Matheus Pessoa | Validação de cupons |
+| Enzo | Cadastro de estabelecimentos |
 
 
 ## Ferramentas
@@ -232,6 +243,11 @@ os papéis serão divididos a partir da distribuição de requisitos, de forma q
 >
 
 # **############## SPRINT 1 ACABA AQUI #############**
+# Planejamento da Sprint 2
+
+## Cadastro de entidades
+
+> ![Cadastro entidades](./images/entidades.jpg)
 
 
 # Projeto da Solução
