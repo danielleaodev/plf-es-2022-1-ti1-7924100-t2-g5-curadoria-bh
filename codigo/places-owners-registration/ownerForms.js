@@ -1,5 +1,6 @@
 // todo gerar o jsonOwner
 // todo salvar no localStorage o jsonOwner
+// todo modularizar para conseguir criar testes unitários
 
 window.onload = () => {
 	const nameInput = document.getElementById("name-input");
