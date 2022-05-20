@@ -14,7 +14,8 @@ function getRadioValue() {
 }
 
 window.onload = () => {
-	const owners = [];
+	let owners = localStorage.getItem("owners");
+	owners = owners ? JSON.parse(owners) : [];
 
 	const nameInput = document.getElementById("name-input");
 	const emailInput = document.getElementById("email-input");

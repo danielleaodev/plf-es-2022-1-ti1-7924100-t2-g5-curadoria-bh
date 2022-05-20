@@ -4,14 +4,21 @@
 // todo criar validações para os campos
 
 window.onload = () => {
-	const owners = JSON.parse(localStorage.getItem("owner"));
+	const owners = JSON.parse(localStorage.getItem("owners"));
 	const lastOwner = owners[owners.length - 1];
 
-	const submitBtn = document.getElementById("submit-place-btn");
+	const submitPlaceBtn = document.getElementById("submit-place-btn");
+	const nameInput = document.getElementById("place-name-input");
+	const cnpjInput = document.getElementById("cnpj-input");
+	const phoneInput = document.getElementById("phone-input");
+	const addressInput = document.getElementById("address-input");
 
-	submitBtn.onclick = () => {
+	submitPlaceBtn.onclick = () => {
 		const jsonPlace = {
-			placeName: "teste",
+			placeName: nameInput.value,
+			cnpj: cnpjInput.value,
+			phone: phoneInput.value,
+			address: addressInput.value,
 		};
 
 		lastOwner["place"] = jsonPlace;
