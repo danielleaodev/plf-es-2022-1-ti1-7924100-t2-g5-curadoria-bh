@@ -1,5 +1,5 @@
 // // todo gerar o jsonOwner
-// todo salvar no localStorage o jsonOwner
+// // todo salvar no localStorage o jsonOwner
 // todo modularizar para conseguir criar testes unitários
 // todo criar validações para os campos
 
@@ -35,5 +35,9 @@ window.onload = () => {
 		localStorage.setItem("owner", JSON.stringify(owners));
 
 		console.log(owners);
+
+		window.location.replace(
+			"/codigo/places-owners-registration/placeForms.html"
+		);
 	};
 };
