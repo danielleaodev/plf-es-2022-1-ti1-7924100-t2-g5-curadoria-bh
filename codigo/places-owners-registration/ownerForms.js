@@ -32,7 +32,7 @@ window.onload = () => {
 		};
 		owners.push(jsonOwner);
 
-		localStorage.setItem("owner", JSON.stringify(owners));
+		localStorage.setItem("owners", JSON.stringify(owners));
 
 		console.log(owners);
 
