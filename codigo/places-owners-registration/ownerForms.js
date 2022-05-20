@@ -1,4 +1,4 @@
-// todo gerar o jsonOwner
+// // todo gerar o jsonOwner
 // todo salvar no localStorage o jsonOwner
 // todo modularizar para conseguir criar testes unitários
 // todo criar validações para os campos
@@ -14,6 +14,8 @@ function getRadioValue() {
 }
 
 window.onload = () => {
+	const owners = [];
+
 	const nameInput = document.getElementById("name-input");
 	const emailInput = document.getElementById("email-input");
 	const cpfInput = document.getElementById("cpf-input");
@@ -28,7 +30,10 @@ window.onload = () => {
 			password: passwordInput.value,
 			gender: getRadioValue(),
 		};
+		owners.push(jsonOwner);
 
-		console.log(jsonOwner);
+		localStorage.setItem("owner", JSON.stringify(owners));
+
+		console.log(owners);
 	};
 };
