@@ -1,12 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+
+		<title>Cadastro - Estabelecimento</title>
+
+		<script type="module" src="./placeForms.js"></script>
 	</head>
 	<body>
-		<h1>Eu existo</h1>
+		<form>
+			<label for="place-name-input">Nome do estabelecimento:</label>
+			<input id="place-name-input" type="text" />
+
+			<label for="cnpj-input">CNPJ:</label>
+			<input id="cnpj-input" type="text" />
+
+			<label for="phone-input">Telefone:</label>
+			<input id="phone-input" type="text" />
+
+			<label for="img">Foto:</label>
+			<input type="file" id="img" name="img" accept="image/*" />
+
+			<label for="address-input">Endereço:</label>
+			<input id="address-input" type="text" />
+
+			<div class="tags-checkboxes">
+				<p>Defina seu estabelecimento:</p>
+				<input type="checkbox" name="restaurant" id="tag-restaurant" />
+				<label for="tag-restaurant">Restaurante</label>
+
+				<input type="checkbox" name="bar" id="tag-bar" />
+				<label for="tag-bar">Bar</label>
+
+				<input type="checkbox" name="nightclub" id="tag-nightclub" />
+				<label for="tag-nightclub">Boate</label>
+			</div>
+
+			<p>Preço médio:</p>
+			<select>
+				<option value="1">$</option>
+				<option value="2">$$</option>
+				<option value="3">$$$</option>
+			</select>
+
+			<button id="submit-place-btn" type="button">Salvar dados</button>
+		</form>
 	</body>
 </html>
