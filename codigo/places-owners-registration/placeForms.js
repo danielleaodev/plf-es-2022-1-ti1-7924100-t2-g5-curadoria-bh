@@ -1,5 +1,5 @@
-// todo gerar o jsonPlaces
-// todo salvar o jsonPlaces no localStorage dentro do jsonOwner correspondente
+// // todo gerar o jsonPlaces
+// // todo salvar o jsonPlaces no localStorage dentro do jsonOwner correspondente
 // todo modularizar para conseguir criar testes unitários
 // todo criar validações para os campos
 
