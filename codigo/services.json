@@ -1,0 +1,32 @@
+var jsonObject  = {
+    "products": [
+      {
+        "title": "10% OFF",
+        "description": "10% de desconto em todos os produtos! Válido entre 30/05/2022 a 06/06/2022",
+        "image":" ",
+
+      },
+      {
+        "title": "Show: 'Hard and Heavy'",
+        "description": "Show da banda Hard and Heavy | Dia 08/06/2022",
+        "image":" ",
+
+      },
+      {
+        "title": "Chopp 300ml gratuito",
+        "description": "Chopp 300ml gratuito para primeira visita como assinante do Beagapp",
+        "image":" ",
+      },
+      {
+        "title": "Chopp 300ml gratuito",
+        "description": "Chopp 300ml gratuito para primeira visita como assinante do Beagapp",
+        "image":" ",
+      },
+      {
+        "title": "Show: 'Hard and Heavy'",
+        "description": "Show da banda Hard and Heavy | Dia 08/06/2022",
+        "image":" ",
+
+      }
+    ]
+  }
