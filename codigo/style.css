@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh;
+    background-color: #FDFFFC;
+  }
+  
+  /* Estilos do menu */
+  .side-navbar {
+    width: 180px;
+    height: 100%;
+    position: fixed;
+    margin-left: -300px;
+    background-color: #FF7518;
+    transition: 0.5s;
+  }
+  
+  .nav-link:active,
+  .nav-link:focus,
+  
+  .my-container {
+    transition: 0.4s;
+  }
+  
+  .active-nav {
+    margin-left: 0;
+  }
+  
+  .nav-link {
+    color:#FDFFFC;
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  .nav-link:hover {
+    color: #F1D302;
+  }
+
+  .nav-link>i {
+      display: block;
+  }
+  .iconsocial {
+      text-align: center;
+  }
+  .navicon{
+    color:#FDFFFC;
+    font-size: 1.5em;
+    text-align: center;
+
+  }
+
+  .navicon:hover {
+      color:#F1D302;
+  }
+
+  /* Para a seção Main */
+  .p-1 {
+      padding: 0!important;
+  }
+
+  .active-cont {
+    margin-left: 180px;
+  }
+  
+  #menu-btn {
+    background-color: #FF7518;
+    color: #FDFFFC;
+    margin-left: -58px;
+  }
+  
+  .my-container input {
+    border-radius: 2rem;
+    padding: 2px 20px;
+  }
+
+  .titulo {
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-top: 12px;
+  }
+
+/* Estilos do banner */
+.banner1 {
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #0B0A0A;
+    position: relative;
+    min-height: 300px;
+}
+
+
+.img-banner1 {
+    max-width: 100%;
+    opacity: 40%;
+    min-height: 300px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.centralizar {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    color:#FDFFFC;
+    font-size: 1.6em;
+}
+
+.centralizart2 {
+    position: absolute;
+    top: 54%;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    color:#FDFFFC;
+    font-size: 1.1em;
+}
+
+.centralizarbtn {
+    position: absolute;
+    top: 68%;
+    width: 100%;
+    text-align: center;
+}
+
+.btncolor {
+    background-color: #FF7518;
+    color: #FDFFFC;
+}
+
+/* Estilos dos parceiros */
+ .img_parceiro {
+    width: 140px;
+    display: inline-block;
+ }
+
+.centralizarparceiro {
+  text-align: justify;
+}
+
+.centralizarparceiro:after {
+  display: inline-block; 
+  width: 100%; 
+  height: 0;
+}
+
+/* Estilos das Avaliações */
+.card-img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  border-radius: 50%;
+  padding: 12px 0 12px;
+}
+
+
+.card-text {
+  text-align: justify;
+}
+
+/* Estilos do rodapé */
+  .rodape {
+      height: 100px;
+      background-color: #0B0A0A;
+      padding-top: 20px;
+      margin-top: 20px;
+  }
+
+  .copy-rodape {
+      font-size: 1em;
+      text-align: center;
+      color:#FDFFFC;
+  }
+
+  .logo-rodape {
+      font-size: 1.4em;
+      text-align: center;
+      color:#FF7518;
+  }
+  /* Estilos do feed de estabelicimentos */
+  .framecardestab {
+    padding-top: 24px;
+  }
+  
+  .framelogoestab{
+    height: 300px;
+  }
+
+  .imgcardcupom{
+    object-fit: cover;
+    object-position: 50% 50%;
+    height: 300px;
+  }
+
+  .btntipo {
+    display: inline;
+    width: fit-content;
+    margin-right: 20px;
+  }
+
+  .tituloestab {
+    font-size: 1.7em;
+  }
+
+
+  /* Estilo da página do estabelecimento */
+

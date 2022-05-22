@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+   integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <!-- Meu CSS -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <!-- BOX ICONS CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"/>
+    <!-- Script do fontawsome -->
+    <script src="https://kit.fontawesome.com/a108cab3b8.js" crossorigin="anonymous"></script>
+    <title>BEAGAPP</title>
+</head>
+
+<body>
+
+    <!-- Menu Lateral -->
+    <div class="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column" id="sidebar">
+        <ul class="nav flex-column text-white w-100">
+            <a href="index.html" class="nav-link h3 text-white my-2">
+                BEAGAPP
+            <li href="#" class="nav-link">
+                <i class="fa-solid fa-user"></i>
+                <p class="mx-2">Minha Conta</p>
+            </li>
+            <li href="#" class="nav-link">
+                <i class="fa-solid fa-ticket"></i>
+                <p class="mx-2">Cupons</p>
+            </li>
+        </ul>
+
+        <div class="iconsocial">
+            <a href="" class="navicon"><i class="navicon fa-brands fa-instagram"></i></a>
+            <a href="" class="navicon"><i class="navicon fa-brands fa-facebook-square"></i></a>
+        </div>
+    </div>
+
+    <!-- Main Wrapper -->
+    <div class="p-1 my-container active-cont">
+        
+        <!-- Botão Menu Topo -->
+        <div class="navfixed">
+            <nav class="navbar top-navbar navbar-light nav-color px-5">
+                <a class="btn border-0" id="menu-btn"><i class="bx bx-menu"></i></a>
+            </nav>
+        </div>  
+        <!--Fim Menu Topo -->
+<main>
+
+    <!-- Informações do Estabelecimento -->
+    <section>
+        <div class="container">
+            <h1 class="titulo">Informações do Estabelecimento</h1>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="card">
+                        <div class="col-6">
+                            <img src="imagens\LOGO_BAR_ESTAÇÃO.jpg" class="" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Felipe</h5>
+                            <p class="card-text">Sempre acreditei na Carta Curinga como uma publicidade de
+                                retorno garantido. Além da grande circulação da nossa marca, os clientes
+                                procuram nosso estabelecimento em busca de qualidade e benefício".</p>
+                                </div>
+                                <!-- Modal com Formulário de edição do perfil -->
+                                <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+                                    tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalToggleLabel">Minhas Informações</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form class="row g-3">
+                                                    <div class="col-6">
+                                                        <label for="inputEmail4" class="form-label">Email</label>
+                                                        <input type="email" class="form-control" id="inputEmail4">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="inputPassword4" class="form-label">Senha</label>
+                                                        <input type="password" class="form-control" id="inputPassword4">
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <label for="inputAddress" class="form-label">Nome Fantasia</label>
+                                                        <input type="text" class="form-control" id="inputAddress"
+                                                            placeholder="BEAGAPP">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="inputCity" class="form-label">CNPJ</label>
+                                                        <input type="text" class="form-control" id="inputCity" placeholder="XX. XXX. XXXX/000X-XX">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="inputCity" class="form-label">Telefone</label>
+                                                        <input type="text" class="form-control" id="inputCity" placeholder="(XX) XXXXX-XXXX">
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <label for="inputAddress2" class="form-label">Endereço</label>
+                                                        <input type="text" class="form-control" id="inputAddress2" placeholder="Av. Cristiano Machado 5001">
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <label for="inputAddress" class="form-label">Complemento</label>
+                                                        <input type="text" class="form-control" id="inputAddress"
+                                                            placeholder="Bloco 2 Apartmento 803">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="inputState" class="form-label">Estado</label>
+                                                        <select id="inputState" class="form-select">
+                                                            <option value="AC" selected>Acre</option>
+                                                            <option value="AL">Alagoas</option>
+                                                            <option value="AP">Amapá</option>
+                                                            <option value="AM">Amazonas</option>
+                                                            <option value="BA">Bahia</option>
+                                                            <option value="CE">Ceará</option>
+                                                            <option value="DF">Distrito Federal</option>
+                                                            <option value="ES">Espírito Santo</option>
+                                                            <option value="GO">Goiás</option>
+                                                            <option value="MA">Maranhão</option>
+                                                            <option value="MT">Mato Grosso</option>
+                                                            <option value="MS">Mato Grosso do Sul</option>
+                                                            <option value="MG">Minas Gerais</option>
+                                                            <option value="PA">Pará</option>
+                                                            <option value="PB">Paraíba</option>
+                                                            <option value="PR">Paraná</option>
+                                                            <option value="PE">Pernambuco</option>
+                                                            <option value="PI">Piauí</option>
+                                                            <option value="RJ">Rio de Janeiro</option>
+                                                            <option value="RN">Rio Grande do Norte</option>
+                                                            <option value="RS">Rio Grande do Sul</option>
+                                                            <option value="RO">Rondônia</option>
+                                                            <option value="RR">Roraima</option>
+                                                            <option value="SC">Santa Catarina</option>
+                                                            <option value="SP">São Paulo</option>
+                                                            <option value="SE">Sergipe</option>
+                                                            <option value="TO">Tocantins</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="inputZip" class="form-label">CEP</label>
+                                                        <input type="text" class="form-control" id="inputZip" placeholder="XXXXX-XXX">
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            🍺Bar
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                                        <label class="form-check-label" for="flexCheckChecked">
+                                                            🍴Restaurante
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                                        <label class="form-check-label" for="flexCheckChecked">
+                                                            🎉Boate
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                                        <label class="form-check-label" for="flexCheckChecked">
+                                                            🍕Pizzaria
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                                        <label class="form-check-label" for="flexCheckChecked">
+                                                            🍣Restaurante Japonês
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                                        <label class="form-check-label" for="flexCheckChecked">
+                                                            🍨Açaí & Sorveterias
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                                        <label class="form-check-label" for="flexCheckChecked">
+                                                            🎲Casa de Jogos
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="hora-cons">Segunda - Abertura: </label>
+                                                        <input id="hora-cons" type="time" name="hora-cons" step="2">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="hora-cons">Fechamento: </label>
+                                                        <input id="hora-cons" type="time" name="hora-cons" step="2">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="hora-cons">Terça - Abertura: </label>
+                                                        <input id="hora-cons" type="time" name="hora-cons" step="2">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="hora-cons">Fechamento: </label>
+                                                        <input id="hora-cons" type="time" name="hora-cons" step="2">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="hora-cons">Quarta - Abertura: </label>
+                                                        <input id="hora-cons" type="time" name="hora-cons" step="2">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="hora-cons">Fechamento: </label>
+                                                        <input id="hora-cons" type="time" name="hora-cons" step="2">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="hora-cons">Quinta - Abertura: </label>
+                                                        <input id="hora-cons" type="time" name="hora-cons" step="2">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="hora-cons">Fechamento: </label>
+                                                        <input id="hora-cons" type="time" name="hora-cons" step="2">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="hora-cons">Sexta - Abertura: </label>
+                                                        <input id="hora-cons" type="time" name="hora-cons" step="2">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="hora-cons">Fechamento: </label>
+                                                        <input id="hora-cons" type="time" name="hora-cons" step="2">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="hora-cons">Sábado - Abertura: </label>
+                                                        <input id="hora-cons" type="time" name="hora-cons" step="2">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="hora-cons">Fechamento: </label>
+                                                        <input id="hora-cons" type="time" name="hora-cons" step="2">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="hora-cons">Domingo - Abertura: </label>
+                                                        <input id="hora-cons" type="time" name="hora-cons" step="2">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="hora-cons">Fechamento: </label>
+                                                        <input id="hora-cons" type="time" name="hora-cons" step="2">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="formFile" class="form-label">Insira sua logo</label>
+                                                        <input class="form-control" type="file" id="formFile">
+                                                    </div>
+                                                </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-secondary">Descartar Alterações</button>
+                                        <button type="submit" class="btn btncolor">Salvar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Botão de Ativação do Modal -->
+                        <a class="btn btncolor" data-bs-toggle="modal"href="#exampleModalToggle" role="button"><b>Editar Informações</b></a>
+                            </div>
+                        </div>
+                            <img src="imagens\LOGO_BAR_ESTAÇÃO.jpg" class="img_parceiro" alt="">
+
+
+                            <h3>Nome:</h3>
+                            <h3>Email:</h3>
+                            <h3>CNPJ:</h3>
+                            <h3>Telefone:</h3>
+                            <h3>Horário de Funcionamento:</h3>
+                            <h3>Nichos:</h3>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Ofertas -->
+            <section>
+
+                <div>
+                    
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer>
+
+            <div class="container rodape">
+                <div class="col-12">
+
+                    <h4 class="copy-rodape">Copyright 2022 - Trabalho Interdisciplinar Semestral</h4>
+                    <h4 class="logo-rodape">BEAGAPP</h4>
+                </div>
+            </div>
+
+        </footer>
+
+    </div>
+    <!-- Fim do Main Wrapper-->
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!-- Script do menu -->
+    <script type="text/javascript">
+        var menu_btn = document.querySelector("#menu-btn");
+        var sidebar = document.querySelector("#sidebar");
+        var container = document.querySelector(".my-container");
+        menu_btn.addEventListener("click", () => {
+        sidebar.classList.toggle("active-nav");
+        container.classList.toggle("active-cont");
+        });
+    </script>
+    
+
+
+    <!-- Script do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+
+
+</html>
