@@ -3,42 +3,42 @@
 // todo modularizar para conseguir criar testes unitários
 // todo criar validações para os campos
 
-function getRadioValue() {
-	const radiosInput = document.getElementsByName("gender");
-	const checkedRadio = Array.from(radiosInput).find((radio) => radio.checked);
+export function getRadioValue(radiosInput) {
+  const checkedRadio = radiosInput.find((radio) => radio.checked);
 
-	if (checkedRadio === undefined) {
-		return "";
-	}
-	return checkedRadio.value;
+  if (checkedRadio === undefined) {
+    return '';
+  }
+  return checkedRadio.value;
 }
 
 window.onload = () => {
-	let owners = localStorage.getItem("owners");
-	owners = owners ? JSON.parse(owners) : [];
+  let owners = localStorage.getItem('owners');
+  owners = owners ? JSON.parse(owners) : [];
 
-	const nameInput = document.getElementById("name-input");
-	const emailInput = document.getElementById("email-input");
-	const cpfInput = document.getElementById("cpf-input");
-	const passwordInput = document.getElementById("password-input");
-	const submitBtn = document.getElementById("submit-btn");
+  const nameInput = document.getElementById('name-input');
+  const emailInput = document.getElementById('email-input');
+  const cpfInput = document.getElementById('cpf-input');
+  const passwordInput = document.getElementById('password-input');
+  const submitBtn = document.getElementById('submit-btn');
 
-	submitBtn.onclick = () => {
-		const jsonOwner = {
-			name: nameInput.value,
-			email: emailInput.value,
-			cpf: cpfInput.value,
-			password: passwordInput.value,
-			gender: getRadioValue(),
-		};
-		owners.push(jsonOwner);
+  submitBtn.onclick = () => {
+    const radiosInput = Array.from(document.getElementsByName('gender'));
+    console.log(radiosInput);
 
-		localStorage.setItem("owners", JSON.stringify(owners));
+    const jsonOwner = {
+      name: nameInput.value,
+      email: emailInput.value,
+      cpf: cpfInput.value,
+      password: passwordInput.value,
+      gender: getRadioValue(radiosInput),
+    };
+    owners.push(jsonOwner);
 
-		console.log(owners);
+    localStorage.setItem('owners', JSON.stringify(owners));
 
-		window.location.replace(
-			"/codigo/places-owners-registration/placeForms.html"
-		);
-	};
+    window.location.replace(
+      '/codigo/places-owners-registration/placeForms.html'
+    );
+  };
 };
