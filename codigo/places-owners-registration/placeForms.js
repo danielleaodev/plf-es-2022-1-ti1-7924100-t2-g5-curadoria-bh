@@ -3,21 +3,6 @@
 // todo modularizar para conseguir criar testes unitários
 // todo criar validações para os campos
 
-// estrutura JSON final para cada dono:
-// {
-// cpf: "14428936722",
-// email: "matheus@teste.com",
-// gender: "masculino",
-// name: "Matheus",
-// password: "minhasenha",
-// place: {
-// 	address: "R. Ó do Forró",
-// 	cnpj: "1233214154231",
-// 	phone: "3178877783",
-// 	placeName: "Forrozeira"
-// 	}
-// }
-
 window.onload = () => {
   const owners = JSON.parse(localStorage.getItem('owners'));
   const lastOwner = owners[owners.length - 1];
