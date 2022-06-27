@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Cadastro - Dono de Estabelecimento</title>
+
+		<script type="module" src="./ownerForms.js"></script>
+	</head>
+	<body>
+		<form>
+			<label for="name-input">Nome:</label>
+			<input id="name-input" type="text" />
+
+			<label for="email-input">Email:</label>
+			<input id="email-input" type="email" />
+
+			<label for="cpf-input">CPF:</label>
+			<input id="cpf-input" type="text" />
+
+			<label for="password-input">Senha:</label>
+			<input id="password-input" type="text" />
+
+			<p>Com qual gênero você mais se identifica?</p>
+			<input id="f-option" type="radio" name="gender" value="feminino" />
+			<label for="f-option">Feminino</label>
+			<input id="m-option" type="radio" name="gender" value="masculino" />
+			<label for="m-option">Masculino</label>
+			<input id="nb-option" type="radio" name="gender" value="nao-binario" />
+			<label for="nb-option">Não binário</label>
+
+			<button id="submit-btn" type="button">Salvar dados</button>
+		</form>
+	</body>
+</html>
