@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <!-- Meu CSS -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <!-- BOX ICONS CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+    <!-- Script do fontawsome -->
+    <script src="https://kit.fontawesome.com/a108cab3b8.js" crossorigin="anonymous"></script>
+    <title>BEAGAPP</title>
+</head>
+
+<body>
+
+    <!-- Menu Lateral -->
+    <div class="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column" id="sidebar">
+        <ul class="nav flex-column text-white w-100">
+            <a href="index.html" class="nav-link h3 text-white my-2">
+                BEAGAPP
+                <li href="#" class="nav-link">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="mx-2">Home</span>
+                </li>
+                <li href="#" class="nav-link">
+                    <i class="fa-solid fa-user"></i>
+                    <p class="mx-2">Meu painel</p>
+                </li>
+                <li href="#" class="nav-link">
+                    <i class="fa-solid fa-ticket"></i>
+                    <p class="mx-2">Meus Cupons</p>
+                </li>
+        </ul>
+
+        <div class="iconsocial">
+            <a href="" class="navicon"><i class="navicon fa-brands fa-instagram"></i></a>
+            <a href="" class="navicon"><i class="navicon fa-brands fa-facebook-square"></i></a>
+        </div>
+    </div>
+
+    <!-- Main Wrapper -->
+    <div class="p-1 my-container active-cont">
+
+        <!-- Botão Menu Topo -->
+        <div class="navfixed">
+            <nav class="navbar top-navbar navbar-light nav-color px-5">
+                <a class="btn border-0" id="menu-btn"><i class="bx bx-menu"></i></a>
+            </nav>
+        </div>
+        <!--Fim Menu Topo -->
+
+        <main>
+            <!-- Cadastre Aqui -->
+            <section>
+                <div class="container">
+                    <h1 class="titulo">Cadastros</h1>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-xl-6 col-xxl-6 ">
+                            <div class="card">
+                                <i class="fa-solid fa-user iconeCadastro"></i>
+                                <!-- Modal com Formulário de edição do perfil / Arquivo JS = placeForms -->
+                                <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalToggleLabel">Cadastro de Usuário
+                                                </h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form class="row g-3">
+                                                    <div class="col-6">
+                                                        <label for="email-input" class="form-label">Email</label>
+                                                        <input type="email" class="form-control" id="email-input">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="password-input" class="form-label">Senha</label>
+                                                        <input type="text" class="form-control" id="password-input">
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <label for="place-name-input" class="form-label">Nome
+                                                            Completo</label>
+                                                        <input type="text" class="form-control" id="place-name-input"
+                                                            placeholder="BEAGAPP">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="cnpj-input" class="form-label">CPF</label>
+                                                        <input type="text" class="form-control" id="cnpj-input"
+                                                            placeholder="XXX.XXX.XXX-XX">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="phone-input" class="form-label">Celular</label>
+                                                        <input type="text" class="form-control" id="phone-input"
+                                                            placeholder="(XX) XXXXX-XXXX">
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <label for="address-input" class="form-label">Endereço</label>
+                                                        <input type="text" class="form-control" id="address-input"
+                                                            placeholder="Av. Cristiano Machado 5001">
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <label for="address-comp-input"
+                                                            class="form-label">Complemento</label>
+                                                        <input type="text" class="form-control" id="address-comp-input"
+                                                            placeholder="Bloco 2 Apartmento 803">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="cep-input" class="form-label">CEP</label>
+                                                        <input type="text" class="form-control" id="cep-input"
+                                                            placeholder="XXXXX-XXX">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button id="submit-place-btn" type="submit"
+                                                    class="btn btncolor"><b>Cadastrar</b></button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <a href="#exampleModalToggle" role="button"
+                                            class="btn btncolor botaoCadastro w-100" data-bs-toggle="modal"><b>Quero usar o Beagapp</b></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-xl-6 col-xxl-6">
+                            <div class="card">
+                                <i class="fa-solid fa-building iconeCadastro"></i>
+                                <!-- Modal com Formulário de edição do perfil / Arquivo JS = placeForms -->
+                                <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalToggleLabel">Cadastro de Estabelecimento
+                                                </h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form class="row g-3">
+                                                    <div class="col-6">
+                                                        <label for="email-input" class="form-label">Email</label>
+                                                        <input type="email" class="form-control" id="email-input">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="password-input" class="form-label">Senha</label>
+                                                        <input type="text" class="form-control" id="password-input">
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <label for="place-name-input" class="form-label">Nome
+                                                            Completo</label>
+                                                        <input type="text" class="form-control" id="place-name-input"
+                                                            placeholder="BEAGAPP">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="cnpj-input" class="form-label">CPF</label>
+                                                        <input type="text" class="form-control" id="cnpj-input"
+                                                            placeholder="XXX.XXX.XXX-XX">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="phone-input" class="form-label">Celular</label>
+                                                        <input type="text" class="form-control" id="phone-input"
+                                                            placeholder="(XX) XXXXX-XXXX">
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <label for="address-input" class="form-label">Endereço</label>
+                                                        <input type="text" class="form-control" id="address-input"
+                                                            placeholder="Av. Cristiano Machado 5001">
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <label for="address-comp-input"
+                                                            class="form-label">Complemento</label>
+                                                        <input type="text" class="form-control" id="address-comp-input"
+                                                            placeholder="Bloco 2 Apartmento 803">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="cep-input" class="form-label">CEP</label>
+                                                        <input type="text" class="form-control" id="cep-input"
+                                                            placeholder="XXXXX-XXX">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button id="submit-place-btn" type="submit"
+                                                    class="btn btncolor"><b>Cadastrar</b></button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <a href="#exampleModalToggle2" role="button" data-bs-toggle="modal" class="btn btncolor botaoCadastro"><b>Sou dono de um Estabelecimento</b></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+        </main>
+
+        <footer>
+
+            <div class="container rodape">
+                <div class="row">
+                    <div class="col-12 col-xl-12 col-xxl-12">
+                        <h4 class="copy-rodape">Copyright 2022 - Trabalho Interdisciplinar Semestral</h4>
+                        <h4 class="logo-rodape">BEAGAPP</h4>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+    </div>
+    <!-- Fim do Main Wrapper-->
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+    <!-- Script do menu -->
+    <script type="text/javascript">
+        var menu_btn = document.querySelector("#menu-btn");
+        var sidebar = document.querySelector("#sidebar");
+        var container = document.querySelector(".my-container");
+        menu_btn.addEventListener("click", () => {
+            sidebar.classList.toggle("active-nav");
+            container.classList.toggle("active-cont");
+        });
+    </script>
+
+
+
+    <!-- Script do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+
+
+</html>
