@@ -17,6 +17,9 @@
     <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
     <!-- Script do fontawsome -->
     <script src="https://kit.fontawesome.com/a108cab3b8.js" crossorigin="anonymous"></script>
+    <!-- jquery Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <title>BEAGAPP</title>
 </head>
 
@@ -62,24 +65,13 @@
             <!-- Estabelecimentos -->
             <section>
                 <div class="container">
-                    <h1 class="titulo">Suas Promoções</h1>
-                    <div class="row">
-
-                        <div class="col-12 col-sm-12 col-md-6 col-xl-3 col-xxl-3">
-                            <div class="card">
-                                <img class="card-img-top" src="/imagens/banner1.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Cadastre uma promoção</h5>
-                                    <p class="card-text"><b>Validade:</b> 31/12/2022</p>
-                                    <p class="card-text">Clique no botão abaixo para registrar um novo benefício para os
-                                        clientes.</p>
-                                </div>
-                                <div class="btn-group" role="group">
-                                    <button class="btn btncolor w-50" type="button" data-bs-toggle="modal" data-bs-target="#exampleModalToggle"><b>Editar</b></button>
-                                    <button class="btn btn-danger w-50" type="button"><b>Excluir</b></button>
-                                </div>
-                            </div>
-                        </div>
+                    <div style="margin-bottom: 5%;">
+                        <h1 class="titulo">Suas Promoções</h1>
+                        <a href="#exampleModalToggle" role="button" data-bs-toggle="modal" class="btn btncolor" style=" position: absolute; right:36px;"><b>Cadastrar Promoção</b></a>
+                    </div>
+                    <div class="row" id="home_product">
+                        <!-- Local onde será inserida a Promoção  -->
+                    </div>
 
                         <!-- Modal com Formulário de edição do perfil / Arquivo JS = placeForms -->
                         <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
@@ -125,23 +117,6 @@
                             </div>
                         </div>
                     </div>
-                    
-
-                        <div class="col-12 col-sm-12 col-md-6 col-xl-3 col-xxl-3">
-                            <div class="card">
-                                <img class="card-img-top" src="/imagens/banner1.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Cadastre uma promoção</h5>
-                                    <p class="card-text">Clique no botão abaixo para registrar um novo benefício para os
-                                        clientes.</p>
-                                </div>
-                                <div class="d-grid gap-2">
-                                    <a href="#"><button class="btn btncolor w-100"><b>Criar Promoção</b></button></a>
-                                </div>
-                            </div>
-                        </div>
-
-
                     </div>
                 </div>
 
@@ -183,7 +158,7 @@
     </script>
 
     <!-- Script do Sistema -->
-    <!-- <script src="painelGeral.js"></script> -->
+    <script src="painelGeral.js"></script>
 
     <!-- Script do Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

@@ -225,6 +225,10 @@
 
 }
 
+.cardpagestabpromo {
+  padding-bottom: 1em;
+}
+
 .cardInfoEstab {
 flex-wrap: nowrap;
 display: inline-block;
@@ -257,4 +261,14 @@ border-radius: 0.25rem;
 .botaoCadastro {
   text-align: center;
   width: 100%;
+}
+
+
+
+/* Estilos da Página de Cadastro de Promoção */
+
+.cardpromo {
+  display: inline-block;
+  max-width: 400px;
+  padding: 2em;
 }
